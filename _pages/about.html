@@ -1,0 +1,24 @@
+---
+layout: default
+title: About
+permalink: /about/
+---
+<section class="about">
+  <a href="{{site.baseurl}}/" class="button_back"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> 返回</a>
+  <div class="about_box">
+    <div class="author">
+        <div class="author_image">
+          <img src="{{site.baseurl}}/assets/img/{% if site.author-pic %}{{site.author-pic}}{% endif %}" alt="Author image">
+        </div>
+        <div class="author_info">
+          <h2 class="author_title">{% if site.author-name %}{{site.author-name}}{% else %}梁进生{% endif %}</h2>
+          <p class="author_subtitle">{% if site.about-author %}{{site.about-author}}{% else %}两年工作经验；目前居住地广州；{% endif %}</p>
+          <p class="author_subtitle">具有一定的产品思维，能结合产品目标优化和完善界面； 熟悉IOS、Android、小程序产品设计规范及设计理念，对交互原理具有一定的认知； 熟练使用PS、AI、C4D、AE、PR、XD等设计软件，能快速完成原型图的制作以及其他的设计任务；有责任心，学习能力强，工作认真，具有一定的管理能力和组织协调能力。 </p>
+        </div>
+      </div>
+
+      <div class="about_social">
+        {% include social_footer.html %}
+      </div>
+    </div> <!-- End Section Author -->
+</section>
